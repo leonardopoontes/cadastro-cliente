@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 Route::get('/index', [\App\Http\Controllers\ClienteController::class, 'index'])->name('cliente.index');
 Route::get('/create', [\App\Http\Controllers\ClienteController::class, 'create'])->name('cliente.create');
